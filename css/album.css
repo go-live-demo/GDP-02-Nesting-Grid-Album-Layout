@@ -1,0 +1,21 @@
+
+/* ------------------------- */
+/* albums section */
+/* ------------------------- */
+
+.albums {
+  /* background-color: ; */
+  padding: 2em 0;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+/* album component */
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+  padding: 1em;
+  box-shadow: 0 0 5px hsla( 0, 0%, 15%, .1);
+}
+

@@ -1,0 +1,86 @@
+/* ------------------------- */
+/* custom properties */
+/* ------------------------- */
+:root {
+  /* hsl values provide ability to practice calculation on them (manipulte the alpha value)*/
+  --yellow: 47 100% 50%;
+  --clr-black: 0 0% 15%;
+  --clr-white: 0 0% 100%;
+  --clr-purple: 256 66% 56%;
+  --clr-tomato: 347 94% 61%;
+
+}
+
+/* ------------------------- */
+/* reset */
+/* ------------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* remove margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+/* body defauls */
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  line-height: 1.1;
+}
+/* make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ------------------------- */
+/* utility classes */
+/* ------------------------- */
+.flex {
+  display: grid;
+  gap: var(--gap, 1em)
+}
+.grid {
+  display: grid;
+  gap: var(--gap, 1em);
+}
+.container {
+  padding: 0 2em;
+  max-width: 100rem;
+  margin-inline: auto;
+}
+
+
+/* colors */
+
+.bg-gradient {
+  background-image: linear-gradient(110deg, hsl( var(--clr-tomato) ), hsl( var(--clr-purple) ));
+}
+
+.bg-blury {
+  background-color: hsl( var(--clr-white) / 0.2 );  
+}
+
+.text-white {
+  color: hsl( var(--clr-white) )
+}
